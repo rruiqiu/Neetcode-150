@@ -20,3 +20,9 @@ class Solution:
             res[i] = res[i] * postfix
             postfix = postfix * nums[i]
         return res
+"""
+Time complexity: O(n)
+Space complexity:
+    O(1) extra space.
+    O(n) space for the output array.
+"""

@@ -9,3 +9,7 @@ class Solution:
                 return [num_table[target - num], index]
             else:
                 num_table[num] = index
+"""
+Time complexity: O(n)
+Space complexity: O(n)
+"""
