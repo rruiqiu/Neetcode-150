@@ -8,9 +8,8 @@ class Solution:
 
         l = 0
         for r, num in enumerate(nums):
-            while (
-                dq and num > dq[-1]
-            ):  # Compare from the decreasing queue from right to left
+            while dq and num > dq[-1]:
+                # Compare from the decreasing queue from right to left
                 dq.pop()
             dq.append(num)  # Always leave the smaller on the top
 

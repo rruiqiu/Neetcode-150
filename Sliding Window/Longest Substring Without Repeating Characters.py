@@ -22,9 +22,8 @@ class Solution:
 
         for r, char in enumerate(s):
             if char in mp:
-                l = max(
-                    mp[char] + 1, l
-                )  # The left pointer would be either the current one or the one that appears faster than the current one
+                # The left pointer would be either the current one or the one that appears faster than the current one
+                l = max(mp[char] + 1, l)
             mp[char] = r
             max_len = max(max_len, r - l + 1)
         return max_len
